@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 // Proxy all requests to open.spotify.com
 app.use('/', createProxyMiddleware({
-  target: 'https://totaljerkface.com/', // The target website to proxy
+  target: 'https://jerkmate.com/jerkmate-ranked', // The target website to proxy
   changeOrigin: true,
   ws: true, // Support WebSocket connections
   pathRewrite: {
