@@ -7,7 +7,8 @@ const port = process.env.PORT || 3000;
 
 // Proxy all requests to open.spotify.com
 app.use('/', createProxyMiddleware({
-  target: 'https://blooket.com/play/', // The target website to proxy
+  target: 'ttps://blooket.com/play/', // The target website to proxy
+  changeOrigin: true,', // The target website to proxy
   changeOrigin: true,
   ws: true, // Support WebSocket connections
   pathRewrite: {
